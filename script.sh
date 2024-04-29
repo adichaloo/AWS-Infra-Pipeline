@@ -29,7 +29,7 @@ if [ -f "$source_file" ]; then
     aws s3 cp "$destination_file" "s3://$bucket_name/$destination_file"
     echo "Destination file uploaded to S3 bucket $bucket_name"
     aws dynamodb put-item \
-    --table-name your-table-name \
+    --table-name fovusstorage \
     --item "{\"id\": {\"S\": \"$id\"}, \"filePath\": {\"S\": \"$bucket_name/$destination_file\"}}"
 else
     echo "Source file $source_file does not exist"
