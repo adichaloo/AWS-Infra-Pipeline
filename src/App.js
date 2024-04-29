@@ -41,8 +41,8 @@ function App() {
 
     var bucketName = "fovusbuckettest";
     var bucketRegion = "us-east-1";
-    var accessKeyId= 'AKIAQGOARR6C7GXMSLZV';
-    var secretAccessKey= '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';
+    var accessKeyId= 'Access Key Id';
+    var secretAccessKey= 'Secret Access Key';
 
     AWS.config.update({
       region: bucketRegion,
