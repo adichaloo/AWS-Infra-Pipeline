@@ -49,8 +49,7 @@
 
 <img width="705" alt="dynamo-trigger-lambda" src="https://github.com/adichaloo/fovus-project/assets/46870107/178207a3-4083-4a12-b904-894a5264ec4c">
 
-## Video Demo
+## [Video Demo](https://drive.google.com/file/d/1UbBrHnw9Gmc7f3h3qfh9mj-i2m_EXEMO/view?usp=sharing)
 
-
-
+Click on Video Demo
 
