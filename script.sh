@@ -9,6 +9,7 @@ destination_file="$2"
 additional_input="$3"
 bucket_name="$4"
 
+id=$(nanoid)
 # Download source file from S3 bucket
 aws s3 cp "s3://$bucket_name/$source_file" "$source_file"
 
@@ -27,6 +28,9 @@ if [ -f "$source_file" ]; then
     # Upload destination file to S3 bucket
     aws s3 cp "$destination_file" "s3://$bucket_name/$destination_file"
     echo "Destination file uploaded to S3 bucket $bucket_name"
+    aws dynamodb put-item \
+    --table-name your-table-name \
+    --item "{\"id\": {\"S\": \"$id\"}, \"filePath\": {\"S\": \"$bucket_name/$destination_file\"}}"
 else
     echo "Source file $source_file does not exist"
 fi
