@@ -42,7 +42,8 @@
 1. After starting the react app upload a .txt file with some content, input and script.sh file. Do not forget the script.sh
 2. You will see that the files .txt and script.sh get uploaded to the S3 bucket and bucketname/.txt and inputText is updated on the DynamoDB
 3. This will trigger a DynamoDB event which will trigger another lambda function which will spin up an EC2 instance, download the script.sh and .txt file from the s3 bucket, Run the script to append the .txt with input content and create a Output.txt which will be uploaded to the S3 bucket.
-4. Once these commands are executed the EC2 instance is gracefully terminated.
+4. The ouput file and its id is then stored in DynamoDB
+5. Once these commands are executed the EC2 instance is gracefully terminated.
 
 ## Demo
 <img width="891" alt="api-gateway-to-lambda" src="https://github.com/adichaloo/fovus-project/assets/46870107/6e2850c7-54ac-4fe2-8535-820dff7d50fa">
