@@ -1,5 +1,5 @@
 # AWS Project
-## Getting Started with Create React App
+## Getting Started with the React App
 
 1. Clone the repository
 2. cd fovus-project
