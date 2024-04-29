@@ -45,6 +45,8 @@
 4. Once these commands are executed the EC2 instance is gracefully terminated.
 
 ## Demo
-![/images/api-gateway-to-lambda.png]
+<img width="891" alt="api-gateway-to-lambda" src="https://github.com/adichaloo/fovus-project/assets/46870107/6e2850c7-54ac-4fe2-8535-820dff7d50fa">
+
+<img width="705" alt="dynamo-trigger-lambda" src="https://github.com/adichaloo/fovus-project/assets/46870107/178207a3-4083-4a12-b904-894a5264ec4c">
 
 
