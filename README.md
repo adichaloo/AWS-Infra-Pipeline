@@ -44,5 +44,7 @@
 3. This will trigger a DynamoDB event which will trigger another lambda function which will spin up an EC2 instance, download the script.sh and .txt file from the s3 bucket, Run the script to append the .txt with input content and create a Output.txt which will be uploaded to the S3 bucket.
 4. Once these commands are executed the EC2 instance is gracefully terminated.
 
+## Demo
+![/images/api-gateway-to-lambda.png]
 
 
